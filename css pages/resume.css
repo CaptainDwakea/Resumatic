@@ -174,10 +174,11 @@ a{
 }
 /* navbar */
 .navbar{
-    height: 80px;
+
     display: flex;
     align-items: center;
-    box-shadow: rgba(0,0,0,0.08) 0px 3px 8px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    background-color: white;
 }
 
 .navbar .container{
@@ -193,7 +194,8 @@ a{
 
 .navbar-brand-text{
     color: var(--clr-black);
-    font-weight: 600;
+    font-weight: 1000;
+    text-align: center;
 }
 
 .navbar-brand-icon{
@@ -213,7 +215,8 @@ a{
 /* resume page */
 
 #about-sc{
-    padding: 64px 0;
+    padding: 10px 0;
+    
 }
 
 .cv-form-row-title{
@@ -232,15 +235,46 @@ a{
 
 .cv-form-blk{
     margin: 3rem 0;
+    background-color: #FFFFFF;
 }
 
 .cv-form-row{
     padding: 3rem 2rem 0 2rem;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgb(0, 0, 0);
     margin-bottom: 1rem;
     position: relative;
 }
 
+.cv-form-row-about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.cv-form-row-achievements{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.cv-form-row-experience{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.cv-form-row-education{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.cv-form-row-skills{
+
+}
+
+.cv-form-row-projects{
+   
+}
 textarea{
     resize: none;
 }
@@ -260,7 +294,7 @@ textarea{
 
 .form-control{
     border-radius: none;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 14px;
     padding: 0.8rem 1.6rem;
     font-family: inherit;
@@ -270,7 +304,7 @@ textarea{
 }
 
 .form-control:focus{
-    border-color: rgba(0,0,0,0.3);
+    border-color: rgba(0,0,0);
 }
 
 .form-text{
@@ -293,7 +327,7 @@ textarea{
     background-color: var(--clr-deepblue);
     font-size: 1.6rem;
     color: var(--clr-offwhite);
-    margin: 1rem 0;
+    margin: 1rem 10px;
 }
 
 .repeater-remove-btn{
@@ -313,17 +347,19 @@ textarea{
 .preview-cnt{
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 32% auto;
+    grid-template-columns: 40% auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
 }
 
 .preview-cnt-l{
     padding: 3rem 3rem 2rem 3rem;
+    background-color: var(--clr-blue);
 }
 
 .preview-cnt-r{
     padding: 3rem 3rem 3rem 4rem;
+    background-color: lightcyan;
 }
 
 .preview-cnt-l .preview-blk:nth-child(1){
@@ -466,7 +502,7 @@ textarea{
         visibility: hidden;
     }
 
-    .non_print_area{
+    .page{
         display: none;
     }
 
@@ -480,5 +516,10 @@ textarea{
         left: 0;
         top: 0;
         overflow: hidden;
+        page-break-after: always;
     }
+}
+
+.main{
+    background-color: white;
 }
