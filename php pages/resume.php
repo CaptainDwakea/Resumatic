@@ -42,7 +42,7 @@ if (!isset($_SESSION['user_id'])) {
         <section id="about-sc" class="page">
             <diV class="container">
                 <div class="about-cnt">
-                    <form action="" class="cv-form" id="cv-form">
+                    <form method="POST" action="save_resume.php" class="cv-form" id="cv-form">
                         <div class="cv-form-blk">
                             <div class="cv-form-row-title">
                                 <h3>About Section</h3>
@@ -294,6 +294,7 @@ if (!isset($_SESSION['user_id'])) {
                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                             </div>
                         </div>
+                        <input type="Submit" title="Create CV" name="cv">
                     </form>
                 </div>
             </diV>
