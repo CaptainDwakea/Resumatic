@@ -300,7 +300,7 @@ if (!isset($_SESSION['user_id'])) {
         </section>
         <hr><br>
 
-       <!--<section id="preview-sc" class="print_area">
+       <section id="preview-sc" class="print_area">
             <div class="container">
                 <div class="preview-cnt">
                     <div class="preview-cnt-l text-black">
@@ -389,7 +389,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="container">
                 <button type="button" class="print-btn btn btn-primary" onclick="printCV()">Print CV</button>
             </div>
-        </section>--> 
+        </section>
         
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
