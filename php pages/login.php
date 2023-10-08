@@ -30,8 +30,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             if ($row['username'] === $uname && $row['password'] === $pass) {
             	$_SESSION['username'] = $row['username'];
             	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: ../html pages/home.html");
+            	$_SESSION['user_id'] = $row['user_id'];
+            	header("Location: ../php pages/home.php");
 		        exit();
             }else{
 				header("Location: index.php?error=Incorect User name or password");
