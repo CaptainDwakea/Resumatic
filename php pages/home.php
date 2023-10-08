@@ -34,7 +34,7 @@
         <h3 class="title-explain">A Quick and easy online Resume builder</h3>
         <p class="detailed-explain">Resumatic, the innovative online resume builder, beckons you to simply share your qualifications and personal details. In response, it crafts your professional journey into the latest and 
             most stylish resume templates, delivering an exceptional representation of your story.</p>
-            <a href="../html pages/resume.html">
+            <a href="../php pages/resume.php">
             <button class="wrapper-button">Start Creating</button>
             </a>
         </div>
