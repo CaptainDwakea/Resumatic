@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css pages/home.css">
+        <link rel="stylesheet" href="../css pages/resume.css">
 </head>
 
 <body>
@@ -23,6 +23,15 @@
         <a href="../php pages/resume.php" class="nav-contents">Create</a>
         <a href="" class="nav-contents">Resources</a>
         <a href="" class="nav-contents">Templates</a>
+        <?php
+if (isset($_SESSION['user_id'])) {
+    // User is logged in, show a logout button
+    echo '<a href="../php pages/logout.php"><button class="nav-button">Logout</button></a>';
+} else {
+    // User is not logged in, show a login button
+    echo '<a href="../php pages/index.php"><button class="nav-button">Login</button></a>';
+}
+?>
     </nav>
 </div>
 

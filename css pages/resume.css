@@ -525,14 +525,14 @@ textarea{
 }
 
 .header{
-    padding:20px 100px;
-   top: 0;
+    padding:10px 100px;
+     top: 0;
     display: flex;
     background-color: #669bbc; 
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: sticky;
     z-index: 1000;
 }
