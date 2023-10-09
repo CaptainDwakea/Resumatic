@@ -22,24 +22,24 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 
 
 	if (empty($uname)) {
-		header("Location: signup.php?error=User Name is required&$user_data");
+		header("Location: index.php?error=User Name is required&$user_data");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: signup.php?error=Password is required&$user_data");
+        header("Location: index.php?error=Password is required&$user_data");
 	    exit();
 	}
 	else if(empty($re_pass)){
-        header("Location: signup.php?error=Re Password is required&$user_data");
+        header("Location: index.php?error=Re Password is required&$user_data");
 	    exit();
 	}
 
 	else if(empty($name)){
-        header("Location: signup.php?error=Name is required&$user_data");
+        header("Location: index.php?error=Name is required&$user_data");
 	    exit();
 	}
 
 	else if($pass !== $re_pass){
-        header("Location: signup.php?error=The confirmation password  does not match&$user_data");
+        header("Location: index.php?error=The confirmation password  does not match&$user_data");
 	    exit();
 	}
 
@@ -49,22 +49,22 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
-			header("Location: signup.php?error=The username is taken try another&$user_data");
+			header("Location: index.php?error=The username is taken try another&$user_data");
 	        exit();
 		}else {
            $sql2 = "INSERT INTO resumatic_login(username, password, name) VALUES('$uname', '$pass', '$name')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
-           	 header("Location: signup.php?success=Your account has been created successfully");
+           	 header("Location: home.php");
 	         exit();
            }else {
-	           	header("Location: signup.php?error=unknown error occurred&$user_data");
+	           	header("Location: index.php");
 		        exit();
            }
 		}
 	}
 	
 }else{
-	header("Location: signup.php");
+	header("Location: index.php");
 	exit();
 }
