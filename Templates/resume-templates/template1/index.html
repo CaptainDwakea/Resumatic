@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<!-- <body class="scale-cv"> -->
+
+<body>
+
+    <!-- <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Smith</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav-items">
+                        <a href="" class="nav-links active-link">
+                            <i class='bx bx-home nav-icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#home" class="nav-links">
+                            <i class='bx bx-user nav-icon'></i>User
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#profile" class="nav-links">
+                            <i class='bx bxs-briefcase-alt-2 nav-icon'></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#books" class="nav-links">
+                            <i class='bx bx-book nav-icon'></i>Book
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="" class="nav-links">
+                            <i class='bx bx-award nav-icon'></i>certifcate
+                        </a>
+                    </li>
+                    <!-- <li class="nav-items">
+                    <a href="" class="nav-links">
+                        <i class='bx bx-home'></i>
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a href="" class="nav-links">
+                        <i class='bx bx-home'></i>
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a href="" class="nav-links">
+                                        <i class='bx bx-home'></i>
+                    </a>
+                </li> -->
+    <!-- </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt nav-icon'></i>
+            </div>
+        </nav>  -->
+
+    </header>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-5 resume-template1-left">
+                <section id="about-sc" class="">
+                    <div class="container">
+                        <div class="about-cnt">
+                            <form action="" class="cv-form" id="cv-form">
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>about section</h3>
+                                    </div>
+                                    <div class="cv-form-row cv-form-row-about">
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">First Name</label>
+                                                <input name="firstname" type="text" class="form-control firstname"
+                                                    id="demo" onkeyup="generateCV()" placeholder="e.g. John">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Middle Name <span
+                                                        class="opt-text">(optional)</span></label>
+                                                <input name="middlename" type="text" class="form-control middlename"
+                                                    id="" onkeyup="generateCV()" placeholder="e.g. Herbert">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Last Name</label>
+                                                <input name="lastname" type="text" class="form-control lastname" id=""
+                                                    onkeyup="generateCV()" placeholder="e.g. Doe">
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Your Image</label>
+                                                <input name="image" type="file" class="form-control image" id=""
+                                                    accept="image/*" onchange="previewImage()">
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Designation</label>
+                                                <input name="designation" type="text" class="form-control designation"
+                                                    id="" onkeyup="generateCV()" placeholder="e.g. Sr.Accountants">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Address</label>
+                                                <input name="address" type="text" class="form-control address" id=""
+                                                    onkeyup="generateCV()" placeholder="e.g. Lake Street-23">
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Email</label>
+                                                <input name="email" type="text" class="form-control email" id=""
+                                                    onkeyup="generateCV()" placeholder="e.g. johndoe@gmail.com">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Phone No:</label>
+                                                <input name="phoneno" type="text" class="form-control phoneno" id=""
+                                                    onkeyup="generateCV()" placeholder="e.g. 456-768-798, 567.654.002">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="" class="form-label">Summary</label>
+                                                <input name="summary" type="text" class="form-control summary" id=""
+                                                    onkeyup="generateCV()" placeholder="e.g. Doe">
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>achievements</h3>
+                                    </div>
+
+                                    <div class="row-separator repeater">
+                                        <div class="repeater" data-repeater-list="group-a">
+                                            <div data-repeater-item>
+                                                <div class="cv-form-row cv-form-row-achievement">
+                                                    <div class="cols-2">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Title</label>
+                                                            <input name="achieve_title" type="text"
+                                                                class="form-control achieve_title" id=""
+                                                                onkeyup="generateCV()"
+                                                                placeholder="e.g. johndoe@gmail.com">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Description</label>
+                                                            <input name="achieve_description" type="text"
+                                                                class="form-control achieve_description" id=""
+                                                                onkeyup="generateCV()"
+                                                                placeholder="e.g. johndoe@gmail.com">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+                                                    <button data-repeater-delete type="button"
+                                                        class="repeater-remove-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-repeater-create value="Add"
+                                            class="repeater-add-btn">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>experience</h3>
+                                    </div>
+
+                                    <div class="row-separator repeater">
+                                        <div class="repeater" data-repeater-list="group-b">
+                                            <div data-repeater-item>
+                                                <div class="cv-form-row cv-form-row-experience">
+                                                    <div class="cols-3">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Title</label>
+                                                            <input name="exp_title" type="text"
+                                                                class="form-control exp_title" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Company /
+                                                                Organization</label>
+                                                            <input name="exp_organization" type="text"
+                                                                class="form-control exp_organization" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Location</label>
+                                                            <input name="exp_location" type="text"
+                                                                class="form-control exp_location" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cols-3">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Start Date</label>
+                                                            <input name="exp_start_date" type="date"
+                                                                class="form-control exp_start_date" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">End Date</label>
+                                                            <input name="exp_end_date" type="date"
+                                                                class="form-control exp_end_date" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Description</label>
+                                                            <input name="exp_description" type="text"
+                                                                class="form-control exp_description" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <button data-repeater-delete type="button"
+                                                        class="repeater-remove-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-repeater-create value="Add"
+                                            class="repeater-add-btn">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>education</h3>
+                                    </div>
+
+                                    <div class="row-separator repeater">
+                                        <div class="repeater" data-repeater-list="group-c">
+                                            <div data-repeater-item>
+                                                <div class="cv-form-row cv-form-row-experience">
+                                                    <div class="cols-3">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">School</label>
+                                                            <input name="edu_school" type="text"
+                                                                class="form-control edu_school" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Degree</label>
+                                                            <input name="edu_degree" type="text"
+                                                                class="form-control edu_degree" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">City</label>
+                                                            <input name="edu_city" type="text"
+                                                                class="form-control edu_city" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cols-3">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Start Date</label>
+                                                            <input name="edu_start_date" type="date"
+                                                                class="form-control edu_start_date" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">End Date</label>
+                                                            <input name="edu_graduation_date" type="date"
+                                                                class="form-control edu_graduation_date" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Description</label>
+                                                            <input name="edu_description" type="text"
+                                                                class="form-control edu_description" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <button data-repeater-delete type="button"
+                                                        class="repeater-remove-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-repeater-create value="Add"
+                                            class="repeater-add-btn">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>projects</h3>
+                                    </div>
+
+                                    <div class="row-separator repeater">
+                                        <div class="repeater" data-repeater-list="group-d">
+                                            <div data-repeater-item>
+                                                <div class="cv-form-row cv-form-row-experience">
+                                                    <div class="cols-3">
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Project Name</label>
+                                                            <input name="proj_title" type="text"
+                                                                class="form-control proj_title" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Project link</label>
+                                                            <input name="proj_link" type="text"
+                                                                class="form-control proj_link" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        <div class="form-elem">
+                                                            <label for="" class="form-label">Description</label>
+                                                            <input name="proj_description" type="text"
+                                                                class="form-control proj_description" id=""
+                                                                onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                    </div>
+                                                    <button data-repeater-delete type="button"
+                                                        class="repeater-remove-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-repeater-create value="Add"
+                                            class="repeater-add-btn">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="cv-form-blk">
+                                    <div class="cv-form-row-title">
+                                        <h3>skills</h3>
+                                    </div>
+
+                                    <div class="row-separator repeater">
+                                        <div class="repeater" data-repeater-list="group-e">
+                                            <div data-repeater-item>
+                                                <div class="cv-form-row cv-form-row-skills">
+                                                    <div class="form-elem">
+                                                        <label for="" class="form-label">Skill</label>
+                                                        <input name="skill" type="text" class="form-control skill" id=""
+                                                            onkeyup="generateCV()">
+                                                        <span class="form-text"></span>
+                                                    </div>
+
+                                                    <button data-repeater-delete type="button"
+                                                        class="repeater-remove-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-repeater-create value="Add"
+                                            class="repeater-add-btn">+</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+            <div class="col-md-7">
+                <div class="l-main bd-container">
+                    <div class="resume" id="area-cv">
+                        <!-- <div class="col-md-10"> -->
+                        <div class="resume-left">
+                            <section class="home" id="home">
+                                <div class="home-container section bd-grid">
+                                    <div class="home-data bd-grid">
+                                        <img src="profile-img.jpg" alt="" class="home-img">
+                                        <h1 class="home-title">Smith<b>Mathew</b></h1>
+                                        <h3 class="home-profession">Web developer</h3>
+                                        <!-- <div>
+                                <a download="" href="resumeCv.pdf" class="home-button-movil">download</a>
+                            </div> -->
+                                    </div>
+
+                                    <div class="home-address bde-grid">
+                                        <span class="home-information">
+                                            <i class='bx bxs-map home__icon'></i>Lorem, ipsum dolor.
+                                        </span>
+                                        <span class="home-information">
+                                            <i class='bx bx-envelope home__icon'></i>Lorem@gmail.com
+                                        </span>
+                                        <span class="home-information">
+                                            <i class='bx bxs-phone-call home__icon'></i>11111111111111111
+                                        </span>
+                                    </div>
+                                </div>
+                                <i class='bx bx-down-arrow-circle generate-pdf' title="Generate PDF"
+                                    id="resume-button"></i>
+                            </section>
+                            <section class="social section">
+                                <h2 class="section-title social-title">Social</h2>
+                                <div class="social-contianer bd-grid">
+                                    <a href="" class="social-link">
+                                        <i class='bx bxl-linkedin-square social-icons'></i>@loremln
+                                    </a>
+                                    <a href="" class="social-link">
+                                        <i class='bx bxl-linkedin-square social-icons'></i>@lorem25
+                                    </a>
+                                    <a href="" class="social-link">
+                                        <i class='bx bxl-twitter social-icons'></i>@lorem54
+                                    </a>
+                                </div>
+                            </section>
+                            <!-- <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="proflie-d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aut. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores quasi tenetur sed tempora
+                        magnam ipsam perferendis quos. Eaque perferendis possimus ducimus voluptates perspiciatis!
+                        Impedit sint earum doloremque ab ducimus?</p>
+                </section> -->
+
+
+                            <section class="education section" id="education">
+                                <h2 class="section-title">Education</h2>
+                                <div class="education-contianer bd-grid">
+                                    <div class="education-content">
+                                        <div class="education-time">
+                                            <span class="education-rounder"></span>
+                                            <span class="education-line"></span>
+                                        </div>
+
+                                        <div class="education-data bd-grid">
+                                            <h3 class="education-title">WEB DEVELOPER</h3>
+                                            <span class="education-studies">Mumbai University</span>
+                                            <span class="education-year">2022-2026</span>
+                                        </div>
+                                    </div>
+                                    <div class="education-content">
+                                        <div class="education-time">
+                                            <span class="education-rounder"></span>
+                                            <span class="education-line"></span>
+                                        </div>
+
+                                        <div class="education-data bd-grid">
+                                            <h3 class="education-title">MASTER OF DESIGN</h3>
+                                            <span class="education-studies">Mumbai University</span>
+                                            <span class="education-year">2022-2026</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="education-content">
+                                        <div class="education-time">
+                                            <span class="education-rounder"></span>
+                                            <span class="education-line-end"></span>
+                                        </div>
+
+                                        <div class="education-data bd-grid">
+                                            <h3 class="education-title">AI ANDML</h3>
+                                            <span class="education-studies">Mumbai University</span>
+                                            <span class="education-year">2022-2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="skills section" id="skills">
+                                <h2 class="section-title">Skills</h2>
+
+                                <div class="skills-content bd-grid grid-left">
+                                    <ul class="skills-data">
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span>HTML
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> CSS
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> JAvascript
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> C++
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> JAVA
+                                        </li>
+                                    </ul>
+
+                                    <ul class="skills-data">
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span>React
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> MYSQL
+                                        </li>
+                                        <li class="skills-name">
+                                            <span class="skill-circle"></span> ANGUALR
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="languages section">
+                                <h2 class="section-title">languages</h2>
+
+                                <div class="languages-container">
+                                    <ul class="languages-content bd-grid">
+                                        <li class="languages-name">
+                                            <span class="languages-circle"></span>spanish
+                                        </li>
+
+                                        <li class="languages-name">
+                                            <span class="languages-circle"></span>malayalam
+                                        </li>
+
+                                        <li class="languages-name">
+                                            <span class="languages-circle"></span>english
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="resume-right">
+                            <section class="profile section" id="profile">
+                                <h2 class="section-title">Profile</h2>
+                                <p class="proflie-d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+                                    aut.
+                                    Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores quasi tenetur
+                                    sed
+                                    tempora
+                                    magnam ipsam perferendis quos. Eaque perferendis possimus ducimus voluptates
+                                    perspiciatis!
+                                    Impedit sint earum doloremque ab ducimus?</p>
+                            </section>
+                            <section class="experience section" id="experience">
+                                <h2 class="section-title">Experience</h2>
+
+                                <div class="experience-contianer bd-grid">
+                                    <div class="experience-content">
+                                        <div class="experience-time">
+                                            <span class="experience-rounder"></span>
+                                            <span class="experience-line"></span>
+                                        </div>
+
+                                        <div class="experience-data bd-grid">
+                                            <h3 class="experience-title">Master of desgin</h3>
+                                            <span class="experience-company">2013-2015/ designx</span>
+                                            <p class="experience-d">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Voluptate mollitia quasi labore. Asperiores impedit nam sint quas
+                                                ipsam numquam. Ipsa rerum maiores sit enim aliquam voluptas saepe unde
+                                                ullam
+                                                quibusdam.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="experience-content">
+                                        <div class="experience-time">
+                                            <span class="experience-rounder"></span>
+                                            <span class="experience-line"></span>
+                                        </div>
+
+                                        <div class="experience-data bd-grid">
+                                            <h3 class="experience-title">WEB DEVELOPER</h3>
+                                            <span class="experience-company">2015-2020/ DEVELOPX</span>
+                                            <p class="experience-d">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Voluptate mollitia quasi labore. Asperiores impedit nam sint quas
+                                                ipsam numquam. Ipsa rerum maiores sit enim aliquam voluptas saepe unde
+                                                ullam
+                                                quibusdam.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="experience-content">
+                                        <div class="experience-time">
+                                            <span class="experience-rounder"></span>
+                                            <span class="experience-line-end"></span>
+                                        </div>
+
+                                        <div class="experience-data bd-grid">
+                                            <h3 class="experience-title">AL AMD ML</h3>
+                                            <span class="experience-company">2013-2015/ AL FATHER</span>
+                                            <p class="experience-d">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Voluptate mollitia quasi labore. Asperiores impedit nam sint quas
+                                                ipsam numquam. Ipsa rerum maiores sit enim aliquam voluptas saepe unde
+                                                ullam
+                                                quibusdam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="certificate section" id="certificate">
+                                <h2 class="section-title">Certificates</h2>
+
+                                <div class="certificate-container bd-grid">
+                                    <div class="certificate-content">
+                                        <h3 class="certificate-title">certificate of web develpoment</h3>
+                                        <p class="certidicate-d">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Quia, tenetur!</p>
+                                    </div>
+
+                                    <div class="certificate-content">
+                                        <h3 class="certificate-title">certificate of mobile develpoment</h3>
+                                        <p class="certidicate-d">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Quia, tenetur!</p>
+                                    </div>
+
+                                    <div class="certificate-content">
+                                        <h3 class="certificate-title">certificate of design develpoment</h3>
+                                        <p class="certidicate-d">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Quia, tenetur!</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="references section" id="references">
+                                <h2 class="section-title">References</h2>
+                                <div class="references-container bd-grid">
+                                    <div class="references-content bd-grid">
+                                        <span class="references-subtitle">sr. director</span>
+                                        <h3 class="references-title">mr.clay doe</h3>
+                                        <ul class="references-contact">
+                                            <Li>561515115151</Li>
+                                            <Li>lore@gmail.com</Li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="references-content bd-grid">
+                                        <span class="references-subtitle">mag. developer</span>
+                                        <h3 class="references-title">mr. david </h3>
+                                        <ul class="references-contact">
+                                            <Li>561515115151</Li>
+                                            <Li>lore@gmail.com</Li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+                            <!-- <section class="interest section">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="interest-container bd-grid">
+                        <div class="interest-content">
+                            <i class='bx bx-headphone interest-icons'></i>
+                            <span class="interest-name">Music</span>
+                        </div>
+
+                        <div class="interest-content">
+                            <i class='bx bx-graph interest-icons'></i>
+                            <span class="interest-name">trading</span>
+                        </div>
+     
+                    </div>
+                </section> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <a href="" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scroll-top'></i>
+    </a>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- jquery repeater cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js"
+        integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- app js -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
