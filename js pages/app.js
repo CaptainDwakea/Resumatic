@@ -47,7 +47,7 @@ const fetchValues = (attrs, ...nodeLists) => {
 
         for(let j=0; j<elemsAttrsCount; j++){
             dataObj[`${attrs[j]}`] = nodeLists[j][i].value;
-        }
+         }
         tempDataArr.push(dataObj);
     }
     return tempDataArr;
