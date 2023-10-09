@@ -524,15 +524,18 @@ textarea{
     background-color: white;
 }
 
-.header{
+
+
+
+
+
+/* .header{
     padding:10px 100px;
      top: 0;
     display: flex;
     background-color: #669bbc; 
     width: 100%;
-    justify-content: space-between;
     align-items: center;
-    /* justify-content: space-between; */
     position: sticky;
     z-index: 1000;
 }
@@ -568,7 +571,7 @@ h2{
 .nav-button:hover{
     background: #003049;
     color:#ffffff;
-}
+} */
 
 /* .nav-contents::after{
     content: '';
@@ -587,3 +590,8 @@ h2{
       
 
 */
+
+.nav-block{
+    display: flex;
+    
+}
