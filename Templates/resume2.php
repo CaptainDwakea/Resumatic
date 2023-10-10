@@ -534,7 +534,7 @@
                                         <div class="preview-blk-title">
                                             <h3>Achievements</h3>
                                         </div>Best UI/UX website
-                                        <div class="achievements-items preview-blk-list" id="achievements_dsp"></div>
+                                        <div class="achievements-items preview-blk-list" id="achievements_dsp"></div>Lorem ipsum dolor sit amet.
                                     </div>
 
                                     <div class="preview-blk">
