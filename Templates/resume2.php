@@ -32,16 +32,18 @@
         }
 
         .nav-contents {
-            margin-left: 20px;
+            margin-left: 10px;
             color: #1d3557;
             font-size: 15px;
             text-decoration: none;
             align-content: center;
             font-weight: 600;
+            /* margin: auto; */
+            justify-content: space-between;
         }
 
         .nav-block{
-            align-content:center;
+            align-content: center;
         }
         .nav-button {
             margin-left: 20px;
@@ -62,10 +64,38 @@
             background: #003049;
             color: #ffffff;
         }
+
+        .down{
+            padding-top: 0px;
+        }
+        .card-header{
+    background-color: #1d3557;
+       }
+        .title_dropdown{
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .btn-link:hover{
+            color: #669bbc;
+        }
+
+        .down-preview{
+            top: 100px;
+        }
+        .all-content{
+    padding-top: 100px;
+       }
+
+       /* .box{
+        box-shadow: black;
+       } */
     </style>
 </head>
 
 <body>
+    <header class="non_print_area">
      <div class="header-nav non_print_area"  style="display: flex;">
         <h2>Resumatic</h2>
         <nav class="nav-block">
@@ -78,38 +108,40 @@
             if (isset($_SESSION['user_id'])) {
                 // User is logged in, show a logout button
                 echo '<a href="../php pages/logout.php"><button class="nav-button">Logout</button></a>';
-            } else {
+            } 
+            else {
                 // User is not logged in, show a login button
                 echo '<a href="../php pages/index.php"><button class="nav-button">Login</button></a>';
             }
             ?>
         </nav>
     </div>
+    </header>
 
     <div class="all-content">
         <div class="row">
             <div class="col-md-6 non_print_area">
                 <section id="about-sc" class="all-content">
-                    <div class="container">
+                    <div class="container down">
+                       
 
                         <div id="accordion">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             ABOUT ME
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="about-cnt">
-                                            <!-- <form action="" class="cv-form" id="cv-form"> ==============================================================================================================================================-->
                                             <div class="cv-form-blk">
-                                                <div class="cv-form-row-title">
+                                                <!-- <div class="cv-form-row-title">
                                                     <h3>about section</h3>
-                                                </div>
+                                                </div> -->
                                                 <!-- <div class = "cv-form-row cv-form-row-about"> -->
                                                 <div class="cols-3">
 
@@ -175,6 +207,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                     </form>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +217,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             ACHIEVEMENTS
                                         </button>
                                     </h5>
@@ -192,10 +225,11 @@
 
                                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body">
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="cv-form-blk">
-                                            <div class="cv-form-row-title">
+                                            <!-- <div class="cv-form-row-title">
                                                 <h3>achievements</h3>
-                                            </div>
+                                            </div> -->
 
                                             <div class="row-separator repeater">
                                                 <div class="repeater" data-repeater-list="group-a">
@@ -220,6 +254,7 @@
                                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                             </div>
                                         </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
@@ -229,17 +264,18 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             EXPERIENCE
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="cv-form-blk">
-                                            <div class="cv-form-row-title">
+                                            <!-- <div class="cv-form-row-title">
                                                 <h3>experience</h3>
-                                            </div>
+                                            </div> -->
 
                                             <div class="row-separator repeater">
                                                 <div class="repeater" data-repeater-list="group-b">
@@ -289,6 +325,7 @@
                                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                             </div>
                                         </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +335,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                             EDUCATION
                                         </button>
                                     </h5>
@@ -306,10 +343,11 @@
 
                                 <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
                                     <div class="card-body">
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="cv-form-blk">
-                                            <div class="cv-form-row-title">
+                                            <!-- <div class="cv-form-row-title">
                                                 <h3>education</h3>
-                                            </div>
+                                            </div> -->
 
                                             <div class="row-separator repeater">
                                                 <div class="repeater" data-repeater-list="group-c">
@@ -358,6 +396,7 @@
                                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                             </div>
                                         </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +406,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingFive">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                             PROJECTS
                                         </button>
                                     </h5>
@@ -375,10 +414,11 @@
 
                                 <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
                                     <div class="card-body">
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="cv-form-blk">
-                                            <div class="cv-form-row-title">
+                                            <!-- <div class="cv-form-row-title">
                                                 <h3>projects</h3>
-                                            </div>
+                                            </div> -->
 
                                             <div class="row-separator repeater">
                                                 <div class="repeater" data-repeater-list="group-d">
@@ -410,6 +450,7 @@
                                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                             </div>
                                         </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
@@ -419,17 +460,18 @@
                             <div class="card">
                                 <div class="card-header" id="headingSix">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                             SKILLS
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                                     <div class="card-body">
+                                    <form action="" class="cv-form" id="cv-form">
                                         <div class="cv-form-blk">
-                                            <div class="cv-form-row-title">
+                                            <!-- <div class="cv-form-row-title">
                                                 <h3>skills</h3>
-                                            </div>
+                                            </div> -->
 
                                             <div class="row-separator repeater">
                                                 <div class="repeater" data-repeater-list="group-e">
@@ -448,11 +490,12 @@
                                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                             </div>
                                         </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- </form> -->
+                    </div>
                 </section>
                 <section class="print-btn-sc">
                     <div class="container">
@@ -465,8 +508,9 @@
 
             <div class="col-md-6 align-self-center">
                 <section id="preview-sc" class="print_area">
-                    <div class="preview-contianer">
-                        <div class="container">
+
+                    <div class="preview-contianer box">
+                        <div class="container down-preview">
                             <div class="preview-cnt">
                                 <div class="preview-cnt-l bg-green text-white">
                                     <div class="preview-blk">
@@ -533,8 +577,8 @@
                                     <div class="preview-blk">
                                         <div class="preview-blk-title">
                                             <h3>Achievements</h3>
-                                        </div>Best UI/UX website
-                                        <div class="achievements-items preview-blk-list" id="achievements_dsp"></div>Lorem ipsum dolor sit amet.
+                                        </div>
+                                        <div class="achievements-items preview-blk-list" id="achievements_dsp"></div>
                                     </div>
 
                                     <div class="preview-blk">
