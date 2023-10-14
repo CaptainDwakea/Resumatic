@@ -135,15 +135,24 @@ a{
 }
 
 /* buttons */
+.print-btn-sc{
+     align-self: auto;}
 .btn{
     font-size: 14.5px;
     font-weight: 600;
     padding: 1.4rem 1.6rem;
     border-radius: 4px;
-    display: inline-block;
 }
 
+button{
+    cursor: pointer;
+    font-size: 100px;
+}
 .btn-primary{
+    height: 80px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 20px;
     background-color: var(--clr-blue);
     color: var(--clr-white);
     border: 1px solid var(--clr-blue);
@@ -340,7 +349,8 @@ a{
 
 /* resume page */
 #about-sc{
-    padding: 64px 0;
+    padding: 10px 0;
+    margin-top: 50px;
 }
 
 .cv-form-row-title{
@@ -523,6 +533,7 @@ textarea{
 .educations-items.preview-blk-list .preview-item span:nth-child(5),
 .experiences-items.preview-blk-list .preview-item span:nth-child(4),
 .experiences-items.preview-blk-list .preview-item span:nth-child(5){
+    display: block;
     margin-right: 1rem;
     background-color: var(--clr-green);
     color: var(--clr-white);
@@ -539,6 +550,8 @@ textarea{
 }
 .projects-items.preview-blk-list .preview-item span{
     display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px){
@@ -563,6 +576,10 @@ textarea{
 
 .print-btn-sc{
     margin: 2rem 0 6rem 0;
+
+}
+.print-btn{
+    
 }
 
 /* print section */
