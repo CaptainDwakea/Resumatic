@@ -100,7 +100,7 @@
        button.print-btn.btn.btn-primary {
     align-self: center;
     font-size: 17px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
     </style>
 </head>
