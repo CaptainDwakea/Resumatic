@@ -146,7 +146,7 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="container down">
 
 
-                        <div id="accordion">
+                        <div id="aboutaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
@@ -155,7 +155,7 @@ if (!isset($_SESSION['user_id'])) {
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#boutaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="about-cnt">
@@ -234,7 +234,7 @@ if (!isset($_SESSION['user_id'])) {
                             </div>
                         </div>
 
-                        <div id="accordion">
+                        <div id="achievementsaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
@@ -243,8 +243,7 @@ if (!isset($_SESSION['user_id'])) {
                                         </button>
                                     </h5>
                                 </div>
-
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#achievementsaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="cv-form-blk">
@@ -281,16 +280,16 @@ if (!isset($_SESSION['user_id'])) {
                             </div>
                         </div>
 
-                        <div id="accordion">
+                        <div id="experiencesaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <button class="btn btn-link collapsed title_dropdown" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             EXPERIENCE
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#experiencesaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="cv-form-blk">
@@ -352,7 +351,7 @@ if (!isset($_SESSION['user_id'])) {
                             </div>
                         </div>
 
-                        <div id="accordion">
+                        <div id="educationaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <h5 class="mb-0">
@@ -362,7 +361,7 @@ if (!isset($_SESSION['user_id'])) {
                                     </h5>
                                 </div>
 
-                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordion">
+                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#educationaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="cv-form-blk">
@@ -423,7 +422,7 @@ if (!isset($_SESSION['user_id'])) {
                             </div>
                         </div>
 
-                        <div id="accordion">
+                        <div id="projectsaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingFive">
                                     <h5 class="mb-0">
@@ -433,7 +432,7 @@ if (!isset($_SESSION['user_id'])) {
                                     </h5>
                                 </div>
 
-                                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordion">
+                                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#projectsaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="cv-form-blk">
@@ -477,7 +476,7 @@ if (!isset($_SESSION['user_id'])) {
                             </div>
                         </div>
 
-                        <div id="accordion">
+                        <div id="skillsaccordion">
                             <div class="card">
                                 <div class="card-header" id="headingSix">
                                     <h5 class="mb-0">
@@ -486,7 +485,7 @@ if (!isset($_SESSION['user_id'])) {
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#skillsaccordion">
                                     <div class="card-body">
                                         <form action="" class="cv-form" id="cv-form">
                                             <div class="cv-form-blk">
@@ -552,7 +551,7 @@ if (!isset($_SESSION['user_id'])) {
             </div>
 
 
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6 align-top">
               
 
               <section id = "preview-sc" class = "print_area">

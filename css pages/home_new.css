@@ -176,6 +176,15 @@ a {
   }
 }
 
+.nav-button{
+  padding: 14px 26px;
+  background: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease
+ }
+
 @media (width < 600px) {
   .hero {
     padding-top: 80px;
@@ -187,7 +196,7 @@ a {
     justify-content: center;
   }
   .nav-button{
-    /* margin-left:20px; */
+    margin-left:20px;
     width:100px;
     height: 40px;
     background:transparent;

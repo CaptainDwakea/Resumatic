@@ -345,8 +345,6 @@ button{
     }
 }
 
-
-
 /* resume page */
 #about-sc{
     padding: 10px 0;
@@ -427,7 +425,7 @@ textarea{
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 999;
+    z-index: 900;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -437,9 +435,18 @@ textarea{
 }
 
 /* preview section */
+#preview-sc{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+}
 .preview-cnt{
     border-radius: 5px;
-    display: grid;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
     grid-template-columns: 32% auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
@@ -577,9 +584,6 @@ textarea{
 .print-btn-sc{
     margin: 2rem 0 6rem 0;
 
-}
-.print-btn{
-    
 }
 
 /* print section */
