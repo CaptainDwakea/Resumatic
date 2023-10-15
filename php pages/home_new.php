@@ -48,9 +48,10 @@
             <div class="buttons">
               <button class="btn">Start Creating</button>
             </div>
+
           </div>
-          <div class="column">
-            <img src="../images/resumatic.png" alt=" " class="hero_img" style="height:250px; padding-bottom: 60px; "  >
+          <div class="column" style="cursor:none;">
+            <img src="../images/resumatic.png" alt=" " class="hero_img" style="height:250px; padding-bottom: 60px;" >
           </div>
         </div>
         <img src="../images/bg-bottom-hero.png" alt="" class="curveImg" />
