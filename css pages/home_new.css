@@ -46,15 +46,16 @@ a {
   margin-left: 20px;
   width: 100px;
   height: 40px;
-  background: transparent;
-  border: 2px solid black;
+  background: white;
+  border: 0px solid black;
   outline: none;
   cursor: pointer;
-  color: white;
+  color:#003049;
   font-size: 17px;
   font-weight: 500;
-  border-radius: 5px;
-  transition: .5s;
+  border-radius: 50px;
+  text-align: center;
+  transition: all .5s ease;
 }
 
 .nav-button:hover {
@@ -105,6 +106,7 @@ a {
   gap: 10px;
 }
 .btn {
+  color:#003049;
   padding: 14px 26px;
   background: #fff;
   border-radius: 50px;
@@ -176,14 +178,14 @@ a {
   }
 }
 
-.nav-button{
+/* .nav-button{
   padding: 14px 26px;
   background: #fff;
   border-radius: 50px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease
- }
+ } */
 
 @media (width < 600px) {
   .hero {
