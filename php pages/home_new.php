@@ -17,9 +17,9 @@
           <ul class="menu_items">
             <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
             <li><a href="../php pages/home_new.php" class="nav_link">Home</a></li>
-            <li><a href="../Templates/resume2.php" class="nav_link">Create</a></li>
-            <li><a href="#" class="nav_link">Resources</a></li>
-            <li><a href="#" class="nav_link">Templates</a></li>
+            <li><a href="../php pages/resume.php" class="nav_link">Create</a></li>
+            <!-- <li><a href="#" class="nav_link">Resources</a></li>
+            <li><a href="#" class="nav_link">Templates</a></li> -->
             
             <?php
     session_start();
@@ -44,13 +44,13 @@
             <h2>A quick and easy online Resume builder</h2>
             <p>Resumatic, the innovative online resume builder, beckons you to simply share your qualifications and personal details. In response, it crafts your professional journey into the latest and 
             most stylish resume templates, delivering an exceptional representation of your story.</p>
-            <a href="../Templates/resume2.php">
+            <a href="../php pages/resume.php">
             <div class="buttons">
               <button class="btn">Start Creating</button>
             </div>
           </div>
           <div class="column">
-            <img src="../images/resumatic.png" alt=" " class="hero_img" />
+            <img src="../images/resumatic.png" alt=" " class="hero_img" style="height:250px; padding-bottom: 60px; "  >
           </div>
         </div>
         <img src="../images/bg-bottom-hero.png" alt="" class="curveImg" />

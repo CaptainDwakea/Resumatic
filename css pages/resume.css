@@ -211,12 +211,11 @@ a{
 }
 
 */
+
 /* resume page */
 
 #about-sc{
     padding: 10px 0;
-    flex-basis: calc(50% - 20px);
-    margin-right: 20px;
     
 }
 
@@ -523,13 +522,9 @@ textarea{
 
 .main{
     background-color: white;
-    display: flex;
-    justify-content: space-between;
 }
 
-#print_area{
-    flex-basis: calc(50% - 20px);
-}
+
 
 
 
