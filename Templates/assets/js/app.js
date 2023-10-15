@@ -88,6 +88,7 @@ const getUserInputs = () => {
 
     let skillElem = document.querySelectorAll('.skill');
 
+
     // event listeners for form validation
     firstnameElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'First Name'));
     middlenameElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT_EMP, 'Middle Name'));
@@ -310,4 +311,9 @@ function myFunction() {
     }
     $(window).resize(expandCollapse); // calls the function when the window first loads
 
+    
+    const input= document.color;
+       input.oninput = ()=>{
+        document.body.style.backgroundColor= input;
+       };
     
