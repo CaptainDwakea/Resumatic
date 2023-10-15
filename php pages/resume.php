@@ -39,6 +39,7 @@ if (!isset($_SESSION['user_id'])) {
     ?>
         </nav>
     </div>
+    <section class="main">
         <section id="about-sc" class="page">
             <diV class="container">
                 <div class="about-cnt">
@@ -294,7 +295,6 @@ if (!isset($_SESSION['user_id'])) {
                                 <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                             </div>
                         </div>
-                        <input type="Submit" title="Create CV" name="cv">
                     </form>
                 </div>
             </diV>
@@ -385,6 +385,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
+    </section>
 
         <section class="print-btn-sc">
             <div class="container">
