@@ -425,7 +425,7 @@ textarea{
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 900;
+    z-index: 999;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -435,18 +435,9 @@ textarea{
 }
 
 /* preview section */
-#preview-sc{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-}
 .preview-cnt{
     border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 999;
+    display: grid;
     grid-template-columns: 32% auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
