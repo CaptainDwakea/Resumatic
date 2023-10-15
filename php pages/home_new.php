@@ -17,7 +17,7 @@
           <ul class="menu_items">
             <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
             <li><a href="../php pages/home_new.php" class="nav_link">Home</a></li>
-            <li><a href="../php pages/resume.php" class="nav_link">Create</a></li>
+            <li><a href="../Templates/resume2.php" class="nav_link">Create</a></li>
             <li><a href="#" class="nav_link">Resources</a></li>
             <li><a href="#" class="nav_link">Templates</a></li>
             
@@ -44,7 +44,7 @@
             <h2>A quick and easy online Resume builder</h2>
             <p>Resumatic, the innovative online resume builder, beckons you to simply share your qualifications and personal details. In response, it crafts your professional journey into the latest and 
             most stylish resume templates, delivering an exceptional representation of your story.</p>
-            <a href="../php pages/resume.php">
+            <a href="../Templates/resume2.php">
             <div class="buttons">
               <button class="btn">Start Creating</button>
             </div>

@@ -55,7 +55,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
            $sql2 = "INSERT INTO resumatic_login(username, password, name) VALUES('$uname', '$pass', '$name')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
-           	 header("Location: home.php");
+           	 header("Location: home_new.php");
 	         exit();
            }else {
 	           	header("Location: index.php");
