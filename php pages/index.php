@@ -2,13 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Login and Registration Form in HTML & CSS | CodingLab </title>
+    <title>Resumatic Login Page</title>
     <link rel="stylesheet" href="../css pages/login.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+<!--<div class="header">
+            <h2>Resumatic</h2>
+        <nav class="nav-block">
+            <!-- <a href=""class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo" ></a> 
+            <a href="../php pages/home.php" class="nav-contents">Home</a>
+            <a href="../php pages/resume.php" class="nav-contents">Create</a>
+            <a href="" class="nav-contents">Resources</a>
+            <a href="" class="nav-contents">Templates</a>
+        </nav>
+    </div>-->
 
   <div class="container">
     <input type="checkbox" id="flip">
@@ -49,12 +59,16 @@
         </form>
       </div>
         <div class="signup-form">
-          <div class="title">Signup</div>
-        <form action="#">
+        <form action="signup-check.php" method="POST">
+        <div class="title">Signup</div>
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="name" placeholder="Enter your Name" required>
+              </div>
+              <div class="input-box">
+              <i class="fas fa-user"></i>
+                <input type="text" name="uname" placeholder="Enter your Username" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
@@ -62,7 +76,7 @@
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" name="re_password"  placeholder="Re-Enter your password" required>
+                <input type="password" name="re_password"  placeholder="Re-Enter your Password" required>
               </div>
               <div class="button input-box">
                 <input type="submit" value="Signup">
