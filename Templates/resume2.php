@@ -38,7 +38,7 @@ if (!isset($_SESSION['user_id'])) {
 
         h2 {
             /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-            color: #98c1d9;
+            color: #e5e5e5;
             font-size: 2.5rem;
             font-weight: 700;
         }
@@ -108,6 +108,7 @@ if (!isset($_SESSION['user_id'])) {
         }
 
         .all-content {
+            overflow: hidden;
             padding-top: 100px;
         }
 

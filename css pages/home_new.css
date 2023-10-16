@@ -23,6 +23,8 @@ header {
 }
 .nav_link{
   padding-top: 100px;
+  width: 100px;
+  height: 40px;
 }
 .nav {
   display: flex;
@@ -36,6 +38,8 @@ header {
 .menu_items {
   display: flex;
   list-style: none;
+  align-items:center ;
+  justify-content: space-between;
   gap: 20px;
 }
 a {
