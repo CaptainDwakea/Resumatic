@@ -568,8 +568,8 @@
 
 
             <div class="col-md-6 align-self-center">
-                <section id="preview-sc" class="print_area">
-                    <div class="container">
+                <section id="preview-sc" >
+                    <div class="container" class="print_area">
                         <div class="preview-cnt">
                             <div class="preview-cnt-l bg-green text-white">
                                 <div class="preview-blk">

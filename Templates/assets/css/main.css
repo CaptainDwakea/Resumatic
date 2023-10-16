@@ -537,6 +537,8 @@ textarea{
 .experiences-items.preview-blk-list .preview-item span:nth-child(4),
 .experiences-items.preview-blk-list .preview-item span:nth-child(5){
     /* display: block; */
+    flex-basis: 100%;
+    /* white-space: pre-wrap; */
     margin-right: 1rem;
     background-color: var(--clr-green);
     color: var(--clr-white);
@@ -550,6 +552,9 @@ textarea{
     display: block;
     opacity: 0.8;
     margin-top: 1rem;
+}
+.projects-items.preview-blk-list .preview-item span:first-child{
+    font-weight: bold;
 }
 .projects-items.preview-blk-list .preview-item span{
     display: block;
