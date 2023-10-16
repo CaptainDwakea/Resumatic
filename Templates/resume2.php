@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../php pages/index.php'); 
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -143,8 +153,8 @@
             <h2>Resumatic</h2>
             <nav class="nav-block">
                 <a href="" class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo"></a>
-                <a href="../php pages/home.php" class="nav-contents">Home</a>
-                <a href="../php pages/resume.php" class="nav-contents">Create</a>
+                <a href="../php pages/home_new.php" class="nav-contents">Home</a>
+                <!--<a href="../php pages/resume.php" class="nav-contents">Create</a>-->
                 <!-- <a href="" class="nav-contents">Resources</a>
                 <a href="" class="nav-contents">Templates</a> -->
                 <?php

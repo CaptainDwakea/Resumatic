@@ -90,6 +90,9 @@ a {
 .hero .row h2{
  color: #023047
 }
+body{
+  overflow: hidden;
+}
 .hero .row p {
   color: #fff;
 }
