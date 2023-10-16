@@ -537,6 +537,8 @@ textarea{
 .experiences-items.preview-blk-list .preview-item span:nth-child(4),
 .experiences-items.preview-blk-list .preview-item span:nth-child(5){
     /* display: block; */
+    flex-basis: 100%;
+    /* white-space: pre-wrap; */
     margin-right: 1rem;
     background-color: var(--clr-green);
     color: var(--clr-white);

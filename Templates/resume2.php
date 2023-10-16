@@ -577,6 +577,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
             <div class="col-md-6 align-self-center">
+
                 <section id="preview-sc">
                     <div class="container print_area">
                         <div class="preview-cnt">
