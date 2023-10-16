@@ -1,4 +1,12 @@
+<?php
+session_start();
 
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../php pages/index.php'); 
+    exit();
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -30,7 +38,7 @@
 
         h2 {
             /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-            color: #98c1d9;
+            color: #e5e5e5;
             font-size: 2.5rem;
             font-weight: 700;
         }
@@ -100,6 +108,7 @@
         }
 
         .all-content {
+            /* overflow: hidden; */
             padding-top: 100px;
         }
 
@@ -568,8 +577,9 @@
 
 
             <div class="col-md-6 align-self-center">
-                <section id="preview-sc" >
-                    <div class="container" class="print_area">
+
+                <section id="preview-sc">
+                    <div class="container print_area">
                         <div class="preview-cnt">
                             <div class="preview-cnt-l bg-green text-white">
                                 <div class="preview-blk">
