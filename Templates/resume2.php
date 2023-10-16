@@ -100,7 +100,7 @@
         }
 
         .all-content {
-            overflow: hidden;
+            /* overflow: hidden; */
             padding-top: 100px;
         }
 
