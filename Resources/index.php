@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../php pages/index.php'); 
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,7 +126,7 @@
         <hr>
     </div>
     <div class="home-articles max-width-1 m-auto font2">
-        <h2>Featured Articles</h2>
+        <h2 class="resources_x">Featured Articles</h2>
         <!-- <div class="year-box adjust-year">
             <div>
                 <h3>Year </h3>
@@ -147,7 +157,7 @@
                     alt="article">
             </div>
             <div class="home-article-content font1">
-                <a href="/blogpost.html">
+                <a href="../Resources/blogpost2.php">
                     <h3>12 Resume mistakes and how to avoid them</h3>
                 </a>
 
@@ -160,7 +170,7 @@
                 <img src="img/How_to_Make_a_Resume_on_iPhone__1_.png" alt="article">
             </div>
             <div class="home-article-content font1">
-                <a href="/blogpost.html">
+                <a href="../Resources/blogpost3.php">
                     <h3>The key parts of a resume: a guide to resume building</h3>
                 </a>
 

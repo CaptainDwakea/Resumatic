@@ -18,7 +18,7 @@
             <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
             <li><a href="../php pages/home_new.php" class="nav_link">Home</a></li>
             <li><a href="../Templates/resume2.php" class="nav_link">Create</a></li>
-            <li><a href="../Templates/resume2.php" class="nav_link">Resources</a></li>
+            <li><a href="../Resources/index.php" class="nav_link">Resources</a></li>
             <!-- <li><a href="#" class="nav_link">Resources</a></li>
             <li><a href="#" class="nav_link">Templates</a></li> -->
             
