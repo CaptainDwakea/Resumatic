@@ -155,7 +155,8 @@ if (!isset($_SESSION['user_id'])) {
             <nav class="nav-block">
                 <a href="" class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo"></a>
                 <a href="../php pages/home_new.php" class="nav-contents">Home</a>
-                <a href="../php pages/resume.php" class="nav-contents">Resources</a>
+                <a href="../Templates/resume2.php" class="nav-contents">Create</a>
+                <a href="../Resources/index.php" class="nav-contents">Resources</a>
                 <!-- <a href="" class="nav-contents">Resources</a>
                 <a href="" class="nav-contents">Templates</a> -->
                 <?php
