@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Resumatic :- Resources</title>
-    <style>
+    <!-- <style>
          .header-nav {
             padding: 5px 50px;
             position: fixed;
@@ -68,7 +69,7 @@
             color: #ffffff;
         }
 
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -78,9 +79,9 @@
             <nav class="nav-block">
                 <a href="" class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo"></a>
                 <a href="../php pages/home_new.php" class="nav-contents">Home</a>
-                <a href="../php pages/resume.php" class="nav-contents">Create</a>
+                <a href="../Templates/resume2.php" class="nav-contents">Create</a>
                 <a href="" class="nav-contents">Resources</a>
-                <a href="" class="nav-contents">Templates</a>
+                <!-- <a href="" class="nav-contents">Templates</a> -->
                 <?php
                 if (isset($_SESSION['user_id'])) {
                     // User is logged in, show a logout button
@@ -132,7 +133,7 @@
                 <img src="img/RIO_-_Women_coding.png" alt="article">
             </div>
             <div class="home-article-content font1">
-                <a href="../blogpost.html">
+                <a href="../Resources/blogpost.php">
                     <h3>Resume dos and don'ts: expert advice for successful applications</h3>
                 </a>
 
