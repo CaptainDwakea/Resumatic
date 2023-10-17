@@ -155,7 +155,7 @@ if (!isset($_SESSION['user_id'])) {
             <nav class="nav-block">
                 <a href="" class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo"></a>
                 <a href="../php pages/home_new.php" class="nav-contents">Home</a>
-                <!--<a href="../php pages/resume.php" class="nav-contents">Create</a>-->
+                <a href="../php pages/resume.php" class="nav-contents">Resources</a>
                 <!-- <a href="" class="nav-contents">Resources</a>
                 <a href="" class="nav-contents">Templates</a> -->
                 <?php
@@ -587,10 +587,10 @@ if (!isset($_SESSION['user_id'])) {
                                         <img src="" alt="" id="image_dsp">
                                     </div>
                                     <div class="preview-item preview-item-name">
-                                        <span class="preview-item-val fw-6" id="fullname_dsp">David James ELuvathingal</span>
+                                        <span class="preview-item-val fw-6" id="fullname_dsp">James Smith</span>
                                     </div>
                                     <div class="preview-item">
-                                        <span class="preview-item-val text-uppercase fw-6 ls-1" id="designation_dsp">Web developer</span>
+                                        <span class="preview-item-val text-uppercase fw-6 ls-1" id="designation_dsp">Business Administrator</span>
                                     </div>
                                 </div>
 
@@ -601,15 +601,15 @@ if (!isset($_SESSION['user_id'])) {
                                     <div class="preview-blk-list">
                                         <div class="preview-item">
                                             <i class="bi bi-telephone"></i>
-                                            <span class="preview-item-val" id="phoneno_dsp">1511155454</span>
+                                            <span class="preview-item-val" id="phoneno_dsp">(123)456-7890</span>
                                         </div>
                                         <div class="preview-item">
                                             <i class="bi bi-envelope-fill"></i>
-                                            <span class="preview-item-val" id="email_dsp">lorem@gmail.com</span>
+                                            <span class="preview-item-val" id="email_dsp">johnsmith@email.com</span>
                                         </div>
                                         <div class="preview-item d-flex">
                                             <i class="bi bi-geo-alt-fill "></i>
-                                            <span class="preview-item-val" id="address_dsp">301,Vixion apt,dombivili,Navi-Mumbai</span>
+                                            <span class="preview-item-val" id="address_dsp">123 Main Street, Anytown, USA</span>
                                         </div>
 
                                     </div>

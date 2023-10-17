@@ -18,6 +18,7 @@
             <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
             <li><a href="../php pages/home_new.php" class="nav_link">Home</a></li>
             <li><a href="../Templates/resume2.php" class="nav_link">Create</a></li>
+            <li><a href="../Templates/resume2.php" class="nav_link">Resources</a></li>
             <!-- <li><a href="#" class="nav_link">Resources</a></li>
             <li><a href="#" class="nav_link">Templates</a></li> -->
             
@@ -51,7 +52,7 @@
 
           </div>
           <div class="column" style="cursor:none;">
-            <img src="../images/resumatic.png" alt=" " class="hero_img" style="height:250px; padding-bottom: 60px;" >
+            <img src="../images/resumatic.png" alt=" " class="hero_img" style="height:350px; padding-bottom: 60px;" >
           </div>
         </div>
         <img src="../images/bg-bottom-hero.png" alt="" class="curveImg" />
