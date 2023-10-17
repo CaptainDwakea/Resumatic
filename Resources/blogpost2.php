@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blogpost.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Resumatic:- Resume dos and don'ts: expert advice for successful applications</title>
     <style>
          li {
@@ -18,6 +19,27 @@
 </head>
 
 <body>
+<header class="non_print_area">
+        <div class="header-nav non_print_area" style="display: flex;">
+            <h2>Resumatic</h2>
+            <nav class="nav-block">
+                <a href="" class="nav-contents"><img src="images/resumatic - logo.png" alt="" class="img-logo"></a>
+                <a href="../php pages/home_new.php" class="nav-contents">Home</a>
+                <a href="../php pages/resume.php" class="nav-contents">Create</a>
+                <a href="" class="nav-contents">Resources</a>
+                <!-- <a href="" class="nav-contents">Templates</a> -->
+                <?php
+                if (isset($_SESSION['user_id'])) {
+                    // User is logged in, show a logout button
+                    echo '<a href="../php pages/logout.php"><button class="nav-button">Logout</button></a>';
+                } else {
+                    // User is not logged in, show a login button
+                    echo '<a href="../php pages/index.php"><button class="nav-button">Login</button></a>';
+                }
+                ?>
+            </nav>
+        </div>
+    </header>
     <!-- <nav class="navigation max-width-1 m-auto">
         <div class="nav-left">
             <a href="/">
@@ -274,7 +296,7 @@
                         alt="article">
                 </div>
                 <div class="home-article-content font1 center">
-                    <a href="/blogpost.html">
+                    <a href="../Resources/blogpost.php">
                         <h3>12 Resume mistakes and how to avoid them</h3>
                     </a>
 
@@ -287,7 +309,7 @@
                     <img src="img/RIO_-_Women_coding.png" alt="article">
                 </div>
                 <div class="home-article-content font1 center">
-                    <a href="/blogpost2.html"><h3>Resume dos and don'ts: expert advice for successful applications</h3></a>
+                    <a href="../Resources/blogpost2.php"><h3>Resume dos and don'ts: expert advice for successful applications</h3></a>
                     
                     <div>Author Name :- Charlotte Grainger</div>
                     <span>07 January | 16 min read</span>
@@ -298,7 +320,7 @@
                     <img src="img/How_to_Make_a_Resume_on_iPhone__1_.png" alt="article">
                 </div>
                 <div class="home-article-content font1 center">
-                    <a href="/blogpost3.html">
+                    <a href="../Resources/blogpost3.php">
                         <h3>The key parts of a resume : <br>A guide to resume building</h3>
                     </a>
 
