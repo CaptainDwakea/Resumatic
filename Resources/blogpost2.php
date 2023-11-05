@@ -25,6 +25,9 @@ if (!isset($_SESSION['user_id'])) {
             padding: 10px;
             font-size: 20px;
         }
+        .h2-util{
+  color: black;
+}
     </style>
 </head>
 
@@ -130,13 +133,13 @@ if (!isset($_SESSION['user_id'])) {
         <li>The design dos and don’ts that you need to know about</li>
         <li>Final thoughts on how you can master your resume writing</li>
 
-        <h2>Choosing the right words: resume dos and don’ts</h2>
+        <h2 class="h2-util">Choosing the right words: resume dos and don’ts</h2>
         <br>
         <p class="font1">When you’re writing a resume, choose your words wisely. The phrases you use tell the hiring
             manager what type of professional you are. It’s not merely about getting all of the right content down on
             the page. You need to do so in a stylish and articulate manner. Before you put pen to paper, it’s helpful to
             take a look at these resume dos and don'ts.</p><br>
-        <h2>Do's in Resume</h2><br>
+        <h2 class="h2-util">Do's in Resume</h2><br>
 
         <h3>1. Do aim to use a varied vocabulary</h3><br>
         <p class="font1">Your vocabulary speaks volumes about you. If your resume reads like a broken record, it’s
@@ -215,7 +218,7 @@ if (!isset($_SESSION['user_id'])) {
             golden rule when applying for jobs.
         </p><br>
 
-        <h2>Don't in Resume</h2><br>
+        <h2 class="h2-util">Don't in Resume</h2><br>
         <h3>1. Don’t bamboozle the reader with jargon</h3><br>
         <p class="font1">Jargon is a snooze-fest. When you’re writing your resume, steer clear of industry-specific
             terms that cannot be understood outside of that setting. Here’s the thing—you have no idea who will read
@@ -280,7 +283,7 @@ if (!isset($_SESSION['user_id'])) {
             not get past the ATS software in the first place.</p><br>
 
         <br>
-        <h2>Key takeaways </h2><br>
+        <h2 class="h2-util">Key takeaways </h2><br>
         <li>Resume writing can be demanding. However, if you perfect this practice, it will increase your chances of
             landing a job interview.</li>
         <li>The words that you choose to use have real power. Take the time to pick out the most effective terms when
@@ -296,7 +299,7 @@ if (!isset($_SESSION['user_id'])) {
         <hr>
     </div>
     <div class="home-articles max-width-1 m-auto font2">
-        <h2>People who read this also read</h2>
+        <h2 class="h2-util">People who read this also read</h2>
         <div class="row">
 
 

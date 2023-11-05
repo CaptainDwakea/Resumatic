@@ -25,7 +25,9 @@ if (!isset($_SESSION['user_id'])) {
             padding: 10px;
             font-size: 20px;
         }
-
+        .h2-util{
+  color: black;
+}
         .img_r {
             height: 100vh;
             background-position: center;
@@ -113,7 +115,7 @@ if (!isset($_SESSION['user_id'])) {
         <p class="font1">In the excitement of your potential dream job appearing on the horizon, it is tempting to rush certain aspects of the application process. Perfecting your resume is the most time-consuming job search activity, so it is often the case that mistakes can creep in. Once you have sent off the resume, you won’t get a chance to correct it later. </p>
         <p class="font1">It might seem like some of these mistakes would never surface, but it is surprising what stress can do to someone. When your brain is frazzled by fleeting moments of opportunity and the odd crushing disappointment, sometimes small resume oversights slip through.
             Though they might not seem so serious at first, trust us, they could be taken as an indication of a wider malaise. If you want to give yourself the very best chance of securing that next role, take a breath and think about whether any of these mistakes apply to you. In this blog, we’ll look at:</p> <br>
-        <h2>12 Resume mistakes</h2>
+        <h2 class="h2-util">12 Resume mistakes</h2>
         <br>
         <p class="font1"> Here are twelve of the most common resume mistakes. Don’t dismiss them and make sure that you take the time to appreciate some of the nuance. </p><br>
         <h3>1. Pointless resume objective</h3><br>
@@ -140,7 +142,7 @@ if (!isset($_SESSION['user_id'])) {
         <p class="font1">Unless you work in modeling or entertainment, there is no requirement to attach a photo to a resume. This used to be common in certain European countries, but it is changing. There may even be discrimination issues if a hiring manager is seen to be swayed by an attractive photo. Leave it for the interview to impress them with your magnetic charms.</p> <br>
         <h3>12. Listing hobbies</h3><br>
         <p class="font1">It is rare that hobbies are listed on a resume. It may not necessarily be a mistake if you have an unusual hobby where you have achieved success and you wish it to be a talking point during the interview, but it is generally considered best to leave hobbies out of a professional job application. Space is at a premium on any resume, so the inclusion of a hobbies section may hint to the hiring manager that you do not have much else to say.</p> <br>
-        <h2>Key takeaways</h2><br>
+        <h2 class="h2-util">Key takeaways</h2><br>
         <p class="font1">If you bear in mind these potential resume mistakes as you write and amend your resume, you shouldn’t go far wrong. Looking for mistakes in the five minutes before you send the resume off to the hiring manager will likely not end well.</p><br>
         <li>Know how you want to write your individual resume.</li>
         <li>Make decisions from the hiring manager’s point of view.</li>
@@ -153,7 +155,7 @@ if (!isset($_SESSION['user_id'])) {
         <hr>
     </div>
     <div class="home-articles max-width-1 m-auto font2">
-        <h2>People who read this also read</h2>
+        <h2 class="h2-util">People who read this also read</h2>
         <div class="row">
 
 
